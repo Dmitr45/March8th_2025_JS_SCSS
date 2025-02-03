@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background:white;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+}
+html{
+  scroll-behavior: smooth;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#particles-js{
+    height: 100vh;
+    width: 100%;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(136deg, rgb(68, 132, 206), rgb(26, 215, 192), rgb(255, 155, 17), rgb(155, 89, 182), rgb(255, 127, 127), rgb(236, 240, 241)) 0% 0% / 1200% 1200%;
+	  background-size: 1200% 1200%;
+	  animation: BackgroundAnimation 70s ease infinite
+}
+.hero h1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:  10.6458333333333335vw;
+    font-weight: lighter;
+    color: #f8f9fa;
+    transition: .8s;
+    white-space: nowrap;
+    padding-bottom: 10vh;
+    animation-name: rise;
+    animation-duration: 3s;
+}
+.hero #mm{
+  color: #f9f9fa;
+  text-shadow: 0 0 20px white;
+}
+.hero h2{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size:  2.6458333333333335vw;
+    color: #f8f9fa;
+    width: fit-content;
+    overflow: hidden;
+    font-weight: lighter;
+    animation-name: left;
+    animation-duration: 6s;
+}
+.hero span{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    padding: 5px 50px 5px 15px;
+    background: transparent;
+    color: #f8f9fa;
+    font-weight: 500;
+    font-size: 2rem;
+    animation-name: rise2;
+    animation-duration: 9s;
+    white-space: nowrap;
+}
+
+@keyframes rise2{
+  0%{
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+  }
+  100%{
+    position:normal;
+  }
+}
+@keyframes left{
+  0%{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+  }
+  100%{
+    position:normal;
+  }
+} 
+@-webkit-keyframes BackgroundAnimation {
+    0% {
+      background-position: 0% 7%;
+    }
+    50% {
+      background-position: 100% 94%;
+    }
+    100% {
+      background-position: 0% 7%;
+    }
+}
+
+@-moz-keyframes BackgroundAnimation {
+  0% {
+    background-position: 0% 7%;
+  }
+  50% {
+    background-position: 100% 94%;
+  }
+  100% {
+    background-position: 0% 7%;
+  }
+}
+
+@-o-keyframes BackgroundAnimation {
+  0% {
+    background-position: 0% 7%;
+  }
+  50% {
+    background-position: 100% 94%;
+  }
+  100% {
+    background-position: 0% 7%;
+  }
+}
+
+@keyframes BackgroundAnimation {
+  0% {
+    background-position: 0% 7%;
+  }
+  50% {
+    background-position: 100% 94%;
+  }
+  100% {
+    background-position: 0% 7%;
+  }
+}
+@media(max-width:1020px){
+    .hero h1{
+        font-size: 4.947916666666667vw;
+        position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+    .hero h2{
+      font-size: 3.947916666666667vw;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+}
+@media(max-width:800px){
+    .hero h1{
+        font-size:   15.5vw;
+        white-space: nowrap;
+        left: 2%;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .hero h2{
+      font-size:   5vw;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+        
+    }
+}
+
+@media(max-width:500px){
+  .hero span{
+    white-space: nowrap;
+    font-size: 1rem;
+  }
+
+@media(max-width:305px){
+  .hero span{
+    white-space: nowrap;
+    font-size: 8vw;
+  }
+  .hero h1{
+    font-size: 13vw;
+  }
+  .hero h2{
+    font-size: 8vw;
+    white-space: nowrap;
+  }
+}
