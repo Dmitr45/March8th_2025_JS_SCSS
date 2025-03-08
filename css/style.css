@@ -10,7 +10,7 @@ body{
 .DNA{
   background-image: url("../img/dnk.png");
   z-index: 800;
-  width: 100%;
+  width: 50%;
   height: 280px;
   position: absolute;
   bottom: 0px;
